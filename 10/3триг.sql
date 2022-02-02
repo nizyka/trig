@@ -1,0 +1,8 @@
+CREATE TRIGGER themes_INSERT_UPDATE
+on themes
+AFTER INSERT
+AS
+BEGIN
+SET NOCOUNT ON
+PRINT N'Добавлена тема'
+END;
